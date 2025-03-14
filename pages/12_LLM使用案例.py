@@ -19,7 +19,7 @@ with st.container(height=350):
 st.subheader("2.编程", divider=True)
 st.write("如果有详细的提示词，非推理模型可以编写大部分程序，使用推理模型可以适度精简提示词或改为描述功能。我的github仓库中包含llm辅助编程的对话记录，除嵌入式和c语言外大部分仓库包含llm辅助编写的程序。")
 st.subheader("3.短文写作", divider=True)
-st.write("deepseek r1使用了纯rl，在写作上有较大优势。相关内容放到articles-by-llm部分。")
+st.write("deepseek r1使用了纯rl，在写作上有较大优势。相关内容放到 https://william7004-gallery.streamlit.app/LLM%E6%95%A3%E6%96%87%E9%9B%86 。")
 st.subheader("4.长文写作", divider=True)
 st.write("deepseek r1逻辑能力较好，可以在上下文中完成中篇小说创作，但存在上下文衔接较差和要素过多的问题，以下是一个示例")
 with open("files/极限电动.md", "r", encoding='utf-8') as f:
