@@ -4,7 +4,7 @@
 
 为了优化项目结构，本人拆分了new-homepage项目，本项目包含博客和杂谈内容，原项目保留在Streamlit Cloud但不再更新。
 
-本项目已部署到Streamlit Cloud，域名为https://william7004-new-homepage.streamlit.app
+本项目已部署到Streamlit Cloud，域名为https://william7004-blog.streamlit.app/
 
 ### 使用python部署
 1.安装依赖
