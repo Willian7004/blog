@@ -39,3 +39,4 @@ st.write("iStoreOS也有对http以及常见web开发框架的支持，其它web�
 st.write("根据说明，iStoreOS的Ubuntu镜像来源于kasmtech的仓库，kasmtech/workspaces-images和kasmtech/workspaces-core-images仓库分别提供了有桌面环境和无桌面环境的可通过http串流的Linux镜像。不过对比仓库的说明，iStoreOS的Ubuntu镜像的确进行了精简。")
 st.write("另外入手了一台j4125迷你主机作为备用机。视频输出高于1080p时容易掉帧，但限制在1080p时体验好不少。可以流畅运行Cinnamon桌面，解码1080p 60帧/2.5k 30帧视频，进行1080p 30帧录屏，全高画质运行Openarena，以第5级画质运行Supertuxkart，Stellarium达到14帧，Xaos超过24帧。")
 st.write("考虑到Jellyfin生成缩略图流畅度问题以及方便在不同设备使用一个Linux桌面，后面改为在j4125部署iStoreOS，j1800安装xfce桌面的solus linux并连接iStoreOS上的Ubuntu镜像。需要注意的是默认视频模式降分辨率，为保证效果可以改为不降分辨率并更改压缩比，播放视频尽量在物理机进行。输入法方面需要开启使用系统输入法选项而非使用虚拟机的输入法。这样部署的缺点是只能用外观较差的xfce桌面。")
+st.write("使用Docker部署streamlit应用时刚开始按streamlit官方的方法，每次更新都要重新创建docker，后面改为添加进程避免关闭、映射端口并挂载目录以实现在更新后立即生效且不用重复安装库文件。用于在Ubuntu docker上不能正常使用git，放弃在istoreos上进行提交，但仍可以通过Ubuntu docker上的vscode进行开发。")
