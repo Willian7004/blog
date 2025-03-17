@@ -1,0 +1,11 @@
+import streamlit as st
+st.set_page_config(layout="wide")
+st.title("谈虚拟化")
+st.subheader("1.容器虚拟化", divider=True)
+st.write("docker是常见的容器虚拟化方式，比较新的podman灯应用也兼容docker，并且去掉了增加安全风险的守护进程。")
+st.write("我目前主要在istoreos使用docker，每个容器具有接近操作系统的操作方法，可以分离服务器和远程桌面等应用，避免互相影响。不过由于docker共用操作系统内核而istoreos缩减了内核功能，可能是造成目前遇到的一些兼容性问题的原因。")
+st.subheader("2.系统虚拟化", divider=True)
+st.write("pve和exsi等操作系统虚拟化方法在每个虚拟机单独运行内核。其中pve基于debian，可以直接运行docker，虽然开源但集群部署功能是商业化的。exsi本身作为商业应用，由于不直接使用linux发行版导致运行docker有一定的性能损耗。")
+st.write("相比docker，pve作为系统虚拟化，在不同虚拟机可以使用不同的操作系统内核，也能进行内核开发等工作。另外支持显卡直通或安装桌面环境作为物理机使用。这样可以实现虚拟机和物理机两用，也可以作为不依赖客户机的中心化电脑使用（只直通亮机卡或分配闲置显卡以实现动态性能分配）。另外，pve的novnc功能也可以给任意虚拟机开启远程桌面，相比docker不需要特定的镜像或额外配置。")
+st.subheader("3.集群虚拟化", divider=True)
+st.write("k8s是常见的集群虚拟化形式，也有k3s等轻量化的方法。这类方法对集群的虚拟化支持优于前面两类形式。如果只用于单一物理机，也能实现更完善的容器监控、版本管理和存储管理等功能，但总体来说只适合复杂业务。")
