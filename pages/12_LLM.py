@@ -6,7 +6,7 @@ st.subheader("1.旗舰模型", divider=True)
 st.write("旗舰模型参数量较大，运行成本较高但可完成的任务也较多。Deepseek v3算是第一个下一代模型，也是第一个发布时性能超越所有闭源模型的开源模型，通过混合专家架构避免成本过高，但后面发布的Gemini2.0Flash控制了参数量，在成本上有一定优势。Grok3是总体效果最好的模型并且开放免费使用，Claude3.7 Sonnet在编程上有优势。为了方便对比和减少落后测试集，数据合并到推理模型部分。")
 
 st.subheader("2.多模态模型", divider=True)
-st.write("多模态模型开源处理图片。对于非思维链模型，闭源模型中Claude3.5 Sonnet表现最好，开源模型中MiniMax VL01表现最好。对于思维链模型，闭源模型中o1表现最好，开源模型中QvQ 72B Preview表现最好。以下是几个模型的对比")
+st.write("多模态模型开源处理图片。对于非推理模型，闭源模型中Claude3.5 Sonnet表现最好，开源模型中Qwen2.5 VL 72B表现最好。对于推理模型，闭源模型中o1表现最好，开源模型中QvQ 72B Preview表现最好但相比Qwen2.5 VL 72B没有优势，而Align DS V在多模态任务中是比较优秀的低成本方案，Skywork R1V 38B语言任务有优势，适合使用多模态作为辅助输入。以下是几个模型的对比")
 df1 = pd.read_excel("files/多模态模型.xlsx")
 st.dataframe(df1)
 st.write("早期的多模态模型大多只支持文本和图像，GPT 4o首次支持语音。在开源模型方面，MiniCPM v2.6 o通过整合不同模型实现对文本、视频和语音的支持，原生支持文本和语音的有Step Audio，原生支持文本、视频和语音的模型中最好的开源模型是Ola 7b。")
