@@ -27,5 +27,6 @@ st.write("windows系统的主要改进方向是完善界面一致性、内置更
 st.subheader("7.回归Linux", divider=True)
 st.write("在j4125主机使用Windows后有一个硬盘不能正常使用，但在主力机上正常。另外考虑到使用Windows虽然远程桌面表现更好，但系统本身响应较慢且启动用时长，不适合低功耗设备，因此重新尝试Linux桌面系统。")
 st.write("使用Linux桌面系统配置远程桌面用xrdp即可。文件共享之前用smb难解决权限问题，进行自动挂载、开启root用户ssh并使用sftp进行共享比较方便，同时适用于远程开发。安卓有带sftp连接功能的客户端，在windows需要安装WinFSP和sshfs-win再映射网络驱动器，路径使用“\\sshfs.r\用户名@IP地址!端口号\home”实现按绝对路径挂载。")
+st.write("备份方面，系统盘备份使用timeshift，数据盘在进行大幅更改时创建btrfs快照，实现快照也相当于nas系统在单数据盘的功能了，而istoreos默认只挂载ext4文件系统，反而无法实现btrfs快照。")
 st.write("为了避免出现局域网无法访问的问题，使用docker部署jellyfin。部署时遇到了没有--volume等参数导致需要docker compose以及挂载卷需要绝对路径的情况。由于使用xrdp需要经常注销，为了确保持续运行，python应用也通过docker部署。")
 st.write("至此，我成功在Linux桌面系统部署了所有预期的局域网服务器功能。虽然我从桌面系统开始接触Linux，但这次成功部署也要归功于尝试istoreos时使用docker的经验和尝试pve时使用ssh的经验。")
