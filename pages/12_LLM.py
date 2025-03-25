@@ -3,7 +3,7 @@ import pandas as pd
 st.set_page_config(layout="wide")
 st.title("LLM")
 st.subheader("1.旗舰模型", divider=True)
-st.write("旗舰模型参数量较大，运行成本较高但可完成的任务也较多。Deepseek v3算是第一个下一代模型，也是第一个发布时性能超越所有闭源模型的开源模型，通过混合专家架构避免成本过高，但后面发布的Gemini2.0Flash控制了参数量，在成本上有一定优势。Grok3是总体效果最好的模型并且开放免费使用，Claude3.7 Sonnet在编程上有优势。为了方便对比和减少落后测试集，数据合并到推理模型部分。")
+st.write("旗舰模型参数量较大，运行成本较高但可完成的任务也较多。闭源模型中，Grok3总体效果最好，Gemini2.0Flash有成本优势，Claude3.7 Sonnet在编程上有优势。开源模型中，Deepseek v3 0324成本不高并且总体性能也比较好，部分用户认为在agent编程应用中接近Claude3.7 Sonnet的水平。数据合并到推理模型部分。")
 
 st.subheader("2.多模态模型", divider=True)
 st.write("多模态模型开源处理图片。对于非推理模型，闭源模型中Claude3.5 Sonnet表现最好，开源模型中Qwen2.5 VL 32B表现最好。对于推理模型，闭源模型中o1表现最好，开源模型中Align DS V在多模态任务中是比较优秀的低成本方案，Skywork R1V 38B语言任务有优势，适合使用多模态作为辅助输入。以下是几个模型的对比")
