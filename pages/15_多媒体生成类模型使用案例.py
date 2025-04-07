@@ -10,6 +10,7 @@ st.write("使用cogview4生成的图片在 https://william7004-gallery.streamlit
 st.subheader("2.视频模型", divider=True)
 st.write("Hunyuan Video Gallery 项目，视频部分展示使用Hunyuan Video生成的视频： https://william7004-hunyuan-video-gallery.streamlit.app/%E8%A7%86%E9%A2%91")
 st.write("https://william7004-gallery.streamlit.app/AI%E8%A7%86%E9%A2%91 展示了使用Wan2.1 1.3b生成的视频，复用了之前使用其它模型生成的发布在社交平台的视频的提示词并添加了一些新的内容。")
+st.write("使用Wan2.1 14b生成的视频发布在： https://william7004-new-gallery.streamlit.app/AI%E8%A7%86%E9%A2%91 ")
 
 st.subheader("3.TTS模型", divider=True)
 st.write("https://william7004-gallery.streamlit.app/LLM%E6%95%A3%E6%96%87%E9%9B%86 包含使用Fish Speech1.5合成的音频。")
