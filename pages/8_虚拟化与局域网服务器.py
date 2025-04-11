@@ -30,3 +30,6 @@ st.write("使用Linux桌面系统配置远程桌面用xrdp即可。文件共享�
 st.write("备份方面，系统盘备份使用timeshift，数据盘在进行大幅更改时创建btrfs快照，实现快照也相当于nas系统在单数据盘的功能了，而istoreos默认只挂载ext4文件系统，反而无法实现btrfs快照。")
 st.write("为了避免出现局域网无法访问的问题，使用docker部署jellyfin。部署时遇到了没有--volume等参数导致需要docker compose以及挂载卷需要绝对路径的情况。由于使用xrdp需要经常注销，为了确保持续运行，python应用也通过docker部署。")
 st.write("至此，我成功在Linux桌面系统部署了所有预期的局域网服务器功能。虽然我从桌面系统开始接触Linux，但这次成功部署也要归功于尝试istoreos时使用docker的经验和尝试pve时使用ssh的经验。")
+st.subheader("8.后续调整", divider=True)
+st.write("由于手机连接xrdp延时过长，可用度不高，用电脑时与服务器距离近，没必要使用远程桌面，就改回物理机。使用多用户时再考虑启用远程桌面。")
+st.write("Jellyfin没有书籍封面提取和翻到指定页面的功能，由于有长期保存一些电子书以及多设备同步的需求，部署了Komga。需要注意的是Komga不使用root权限，需要通过chmod设置挂载的目录的权限。")
