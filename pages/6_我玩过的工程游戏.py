@@ -50,4 +50,5 @@ st.write("Juno: New Origins可以通过飞控控制飞船相对于地面的方�
 st.image("files/jno1.jpg")
 st.write("货运飞船增加1000吨载荷，最重的版本第一级使用8个推进器，重量达到40万吨，也可以实现着陆。")
 st.image("files/jno2.jpg")
-
+st.subheader("6.建筑类工程游戏", divider=True)
+st.write("我玩过的建筑题材的游戏包括Minecraft等沙盒游戏和Poly Bridge3，前者时间比较早没有截图，后者比较公式化，后面就没有玩了。")

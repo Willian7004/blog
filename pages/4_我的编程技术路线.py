@@ -17,5 +17,5 @@ st.write("此前部署Qwen2 72b是本地运行，大部分层加载在CPU，速�
 st.write("近期我进行编程也有一些新的方向。一方面转向语法简单并且我更为熟悉的的Python语言，学习了Streamlit和NiceGUI用于快速制作网页。另一方面新出现的思维链模型具有更高的编程能力，可以尝试在提示词中描述程序功能而非具体步骤以节省开发时间。逻辑内容使用LLM辅助编写的Streamlit应用包括本应用和 https://github.com/Willian7004/gallery 等。")
 st.subheader("5.终于电路", divider=True)
 st.write("考虑到使用大量编程语言在语法上容易造成混淆，除c语言和python外基本都不使用了。后来因为希望了解电路设计，参加了一生一芯项目，接触到了Verilog和Chisel。Verilog在风格上接近c语言，而Chisel是Java风格的，又考虑到语法复杂度和部署难度等因素，选择使用Verilog作为我进行电路设计的主要编程语言。考虑到语法混淆问题，短期内也不会大规模使用其它编程语言了。")
-st.subheader("6.全AI编程", divider=True)
+st.subheader("6.氛围编程", divider=True)
 st.write("随着推理模型出现，编程时可以逐步减少对编程语言本身的关注从而自由选择编程语言，我的不少新项目也降低了提示词复杂度，在https://github.com/Willian7004/p5js-programs 项目以及HTML部分的three.js项目在对相应编程语言了解较少的情况下完全使用AI编程，不过还不能实现预期效果，下一代推理模型出现后应该会有较大改善。")
