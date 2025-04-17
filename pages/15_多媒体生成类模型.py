@@ -3,7 +3,7 @@ st.set_page_config(layout="wide")
 st.title("多媒体生成类模型")
 st.write("为了调整内容分布，这里把AIGC领域较常用的几类模型放到这一部分，相比之前添加了音频类模型，统称多媒体生成类模型，移除了不常用的视频增强模型。")
 st.subheader("1.绘画模型", divider=True)
-st.write("闭源绘画模型中虽然有其它画质更好的选项，但支持直接通过对话生成和编辑图片的GPT 4o和Gemini2.0 Flash成为主流。开源绘画模型能对标的是Lumina mGPT2.0，但效果不太理想且进行部署的显存门槛高。")
+st.write("闭源绘画模型中虽然有其它画质更好的选项，但支持直接通过对话生成和编辑图片的GPT 4o和Gemini2.0 Flash成为主流。开源绘画模型能对标的是Lumina mGPT2.0，但效果不太理想且进行部署的显存门槛高。另外，如果只需要实现快速调用一致性控制功能，可以用Omnigen，光照还行但结构表现差不少，建议分辨率720p。")
 st.write("其它开源绘画模型中cogview4比较有优势，支持横屏和竖屏1080p，光照和细节表现较好，人物结构表现一般。目前只能通过diffusers库推理，速度较慢，使用3070m开启sequential cpu offload显存占用1.4g，推理时间8分钟。")
 
 st.subheader("2.视频模型", divider=True)
