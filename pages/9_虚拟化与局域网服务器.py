@@ -33,3 +33,5 @@ st.write("至此，我成功在Linux桌面系统部署了所有预期的局域�
 st.subheader("8.后续调整", divider=True)
 st.write("由于手机连接xrdp延时过长，可用度不高，用电脑时与服务器距离近，没必要使用远程桌面，就改回物理机。使用多用户时再考虑启用远程桌面。")
 st.write("Jellyfin没有书籍封面提取和翻到指定页面的功能，由于有长期保存一些电子书以及多设备同步的需求，部署了Komga。需要注意的是Komga不使用root权限，需要通过chmod设置挂载的目录的权限。")
+st.write("部署了watchover用于自动更新docker应用")
+st.write("由于chatbox搜索功能不能正常运行，大部分搜索应用需要闭源的解析工具，另外考虑到需要文本嵌入和代码解释器功能，改用openwebui作为LLM对话工具。在局域网服务器使用Docker部署，嵌入任务中非文本内容转markdown并调用siliconflow的嵌入模型api，在主力机部署的则使用本地模型。")
