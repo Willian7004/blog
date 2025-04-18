@@ -24,7 +24,5 @@ st.subheader("5.长序列模型", divider=True)
 st.write("处理或生成较长的文章需要支持较大输入或输出上下文长度的模型，考虑对api成本的影响，这类只讨论开源模型。适合端侧部署的开源长上下文模型有Qwen2.5 7b/14b、InternLM2.5 7b和GLM4 9b的长上下文版本，均为1M上下文。Llama4做到了10M上下文，有一定优势。长输出模型只有使用longwriter数据集微调的模型，目前只有GLM4 9b、Qwen2.5 7B和Llama3.1 8b。")
 
 st.subheader("6.模型部署", divider=True)
-st.write("有多个运行框架可以部署LLM，我目前用的是Ollama。Ollama的优势是安装比较方便，还可以直接在命令行下载量化后的模型。对于其它框架，vLLM的优势是并发性能好以及支持多GPU张量并行；kTransformers的优势是通过异构计算优化MoE模型的显存占用；Mlx Vlm适用于Mac平台，对多模态模型支持较好；ChatterUI适用于安卓平台。Xinference整合了一些推理框架，除LLM外还支持语音合成等类型的模型。")
-st.write("Ollama没有GUI但可以通过http请求或使用Python和Javascript等语言的库文件整或到应用中。Chatbox可以直接调用Ollama的非多模态模型并通过openai api格式调用多模态模型。")
-st.write("我目前在电脑部署的模型有Deepseek R1 Distill Qwen 7b Ablicated（去对齐）、MiniCPM v2.6（用于多模态，效果更好的Qwen2 VL 7b目前还不能在Ollama运行）、Bge-m3（嵌入模型）。在手机部署的模型有Deepseek R1 Distill Qwen 1.5b和Dolphin3 3b。")
-
+st.write("有多个运行框架可以部署LLM。Ollama的优势是安装比较方便，还可以直接在命令行下载量化后的模型；vLLM的优势是并发性能好以及支持多GPU张量并行；kTransformers的优势是通过异构计算优化MoE模型的显存占用；Mlx Vlm适用于Mac平台，对多模态模型支持较好；ChatterUI适用于安卓平台。Xinference整合了一些推理框架，除LLM外还支持语音合成等类型的模型。")
+st.write("LM Studio与Ollama类似，均使用Llama.cpp作为后端，但Ollama对后端进行了一些修改，对一些模型支持慢。LM Studio虽然选择了旧一些的版本但总体兼容性好不少，并且集成了GUI，因此更换到了LM Studio。")
