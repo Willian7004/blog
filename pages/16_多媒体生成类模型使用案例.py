@@ -6,6 +6,7 @@ st.write("相比复杂的工作流，我更偏向使用功能完善的模型通�
 st.subheader("1.绘画模型", divider=True)
 st.write("Hunyuan Video Gallery 项目，图片部分展示使用Hunyuan Video图片，复用了之前使用Flux.1的提示词： https://william7004-hunyuan-video-gallery.streamlit.app/%E5%9B%BE%E7%89%87")
 st.write("使用cogview4生成的图片在 https://william7004-gallery.streamlit.app/AI%E5%9B%BE%E7%89%87 ")
+st.write("使用Pixelwave生成的图片在 https://william7004-new-gallery.streamlit.app/Pixelwave ")
 
 st.subheader("2.视频模型", divider=True)
 st.write("Hunyuan Video Gallery 项目，视频部分展示使用Hunyuan Video生成的视频： https://william7004-hunyuan-video-gallery.streamlit.app/%E8%A7%86%E9%A2%91")
