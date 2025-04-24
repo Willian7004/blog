@@ -3,13 +3,13 @@ import pandas as pd
 st.set_page_config(layout="wide")
 st.title("LLM")
 st.subheader("1.旗舰模型", divider=True)
-st.write("旗舰模型参数量较大，运行成本较高但可完成的任务也较多。闭源模型中，Grok3总体效果最好，Gemini2.0Flash有成本优势，Claude3.7 Sonnet在编程上有优势。开源模型中，Deepseek v3 0324性能最好。（Llama4系列由于存在数据污染问题，暂时在表中移除）")
+st.write("旗舰模型参数量较大，运行成本较高但可完成的任务也较多。闭源模型中，Grok3总体效果最好，Gemini2.0Flash有成本优势，Claude3.7 Sonnet在编程上有优势。开源模型中，Deepseek v3 0324性能最好。")
 
 st.subheader("2.多模态模型", divider=True)
-st.write("多模态模型开源处理图片。对于非推理模型，闭源模型中Claude3.5 Sonnet表现最好，开源模型中Qwen2.5 VL 32B表现最好。对于推理模型，闭源模型中o1表现最好，开源模型中Kimi VL Thinking表现最好。以下是几个模型的对比")
+st.write("多模态模型开源处理图片。对于非推理模型，闭源模型中Claude3.5 Sonnet表现最好，开源模型中Qwen2.5 VL 32B表现最好。对于推理模型，闭源模型中o1表现最好，开源模型中Skywork R1V2表现最好。以下是几个模型的对比")
 df1 = pd.read_excel("files/多模态模型.xlsx")
 st.dataframe(df1)
-st.write("早期的多模态模型大多只支持文本和图像，GPT 4o首次支持语音。在开源模型方面，MiniCPM v2.6 o通过整合不同模型实现对文本、视频和语音的支持，原生支持文本和语音的有Step Audio，原生支持文本、视频和语音的模型中最好的开源模型是Ola 7b。")
+st.write("早期的多模态模型大多只支持文本和图像，GPT 4o首次支持语音。在开源模型方面，MiniCPM v2.6 o通过整合不同模型实现对文本、视频和语音的支持，原生支持文本和语音的有Step Audio，原生支持文本、视频和语音的模型有Ola 7b。")
 
 st.subheader("3.推理模型", divider=True)
 st.write("推理模型可以通过增加推理步骤来提高性能。目前最优秀的闭源推理模型是o4 mini，Gemini2.5 pro exp和Gemini2.0 flash thinking exp有成本优势，最优秀的开源推理模型是Deepseek R1。本地部署Qwq 32b比较有优势，也解决了Deepseek R1小说写作过度使用科幻元素以及蒸馏版写作风格不一致的问题，小参数量的参考下表。考虑模型性能，在通用任务中不推荐使用小参数量非推理模型，后文中已移除相关数据。由于不少模型不是同时测试，表中只保留了有较多模型进行的测试。beat of 64测试的结果写到括号内。")
