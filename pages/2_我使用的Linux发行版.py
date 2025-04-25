@@ -43,3 +43,4 @@ st.write("考虑到Jellyfin生成缩略图流畅度问题以及方便在不同�
 st.subheader("8.继续转向Linux Mint", divider=True)
 st.write("上一次在j1800主机安装Linux Mint时，由于Cinnamon桌面流畅度差，Xfce桌面与Cinnamon桌面设置等内容区别较大，选择了Mate桌面，由于外观以及流畅度问题未完全解决等原因弃用了。")
 st.write("由于对非deb系生态不熟悉，deb系非ubuntu系无法使用ppa和timeshift等功能，继续寻找ubuntu下游发行版。试了Linux Lite，启动速度很慢，最后决定换成Linux Mint Xfce版本。虽然遇到设置项不一致的问题，但相比其它使用Xfce桌面的发行版版本并不差，相比Mate桌面更现代化且流畅度高，除了没有主题下载功能外与Cinnamon比较接近。这样我所有x86设备均使用了Linux Mint。")
+st.write("不过deb系有一个比较有优势的系统是Debian teating，不需要大版本更新，软件和内核版本也比较新，但也存在缺少ubuntu功能的缺点。由于大部分软件不需要最新，其它如Blender4.2依赖特定版本可以找appimage，都不能满足要求的用flatpak也基本能解决。")
