@@ -40,3 +40,6 @@ st.write("虽然j1800能用外观较好的Solus Linux，但兼容性较差，又
 st.write("iStoreOS由于内核功能受限，用python无法安装要编译的包，也不能装conda，在docker安装kasm ubuntu能安装conda但不支持github desktop，因此使用docker部署streamlit应用。")
 st.write("另外入手了一台j4125迷你主机作为备用机。视频输出高于1080p时容易掉帧，但限制在1080p时体验好不少。可以流畅运行Cinnamon桌面，解码1080p 60帧/2.5k 30帧视频，进行1080p 30帧录屏，全高画质运行Openarena，以第5级画质运行Supertuxkart，Stellarium达到14帧，Xaos超过24帧。")
 st.write("考虑到Jellyfin生成缩略图流畅度问题以及方便在不同设备使用一个Linux桌面，后面改为在j4125部署iStoreOS，j1800安装xfce桌面的solus linux并连接iStoreOS上的Ubuntu镜像。需要注意的是默认视频模式降分辨率，为保证效果可以改为不降分辨率并更改压缩比，播放视频尽量在物理机进行。输入法方面需要开启使用系统输入法选项而非使用虚拟机的输入法。这样部署的缺点是只能用外观较差的xfce桌面并且功能受iStoreOS内核限制。")
+st.subheader("8.继续转向Linux Mint", divider=True)
+st.write("上一次在j1800主机安装Linux Mint时，由于Cinnamon桌面流畅度差，Xfce桌面与Cinnamon桌面设置等内容区别较大，选择了Mate桌面，由于外观以及流畅度问题未完全解决等原因弃用了。")
+st.write("由于对非deb系生态不熟悉，deb系非ubuntu系无法使用ppa和timeshift等功能，继续寻找ubuntu下游发行版。试了Linux Lite，启动速度很慢，最后决定换成Linux Mint Xfce版本。虽然遇到设置项不一致的问题，但相比其它使用Xfce桌面的发行版版本并不差，相比Mate桌面更现代化且流畅度高，除了没有主题下载功能外与Cinnamon比较接近。这样我所有x86设备均使用了Linux Mint。")
