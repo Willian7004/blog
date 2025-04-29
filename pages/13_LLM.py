@@ -12,7 +12,7 @@ st.dataframe(df1)
 st.write("早期的多模态模型大多只支持文本和图像，GPT 4o首次支持语音。在开源模型方面，MiniCPM v2.6 o通过整合不同模型实现对文本、视频和语音的支持，原生支持文本和语音的有Step Audio，原生支持文本、视频和语音的模型有Ola 7b。")
 
 st.subheader("3.推理模型", divider=True)
-st.write("推理模型可以通过增加推理步骤来提高性能。目前最优秀的闭源推理模型是o4 mini，Gemini2.5 pro exp和Gemini2.0 flash thinking exp有成本优势，最优秀的开源推理模型是Qwen3 235b a22b，主流CPU或大显存显卡可以部署Qwen3 30b a3b，使用通道ddr4内存能达到12.3token/s。考虑模型性能，不再推荐使用小参数量非推理模型，后文中已移除相关数据。由于不少模型不是同时测试，表中只保留了有较多模型进行的测试。beat of 64测试的结果写到括号内。")
+st.write("推理模型可以通过增加推理步骤来提高性能。目前最优秀的闭源推理模型是o4 mini，Gemini2.5 pro exp和Gemini2.0 flash thinking exp有成本优势，最优秀的开源推理模型是Qwen3 235b a22b，主流CPU或大显存显卡可以部署Qwen3 30b a3b，在杂谈页面查找Qwen3可以找到我做的测试结果。考虑模型性能，不再推荐使用小参数量非推理模型，后文中已移除相关数据。由于不少模型不是同时测试，表中只保留了有较多模型进行的测试。beat of 64测试的结果写到括号内。")
 df2 = pd.read_excel("files/旗舰模型和推理模型.xlsx")
 st.dataframe(df2)
 
